@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/addnew.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body style="background-image: url(img/bg.jpg)">
+
+
+<div class="row" >
+  <div class="column1" style="background-image: url(img/header.jpg)">
+      <div class="logo"><img src="img/logo.jpg" style="width:150px ; height:150px"></div>
+  </div>
+  <div class="column" style="background-image: url(img/header.jpg)">
+    <h1>Library Management System</h1>
+    
+  </div>
+  <div class="column2" style="background-image: url(img/header.jpg)">
+    <i class="fa fa-user-circle" aria-hidden="true" style="font-size:60px"></i>
+    <button><u>log out</u></button>
+  </div>
+</div>
+
+<!--navigation bar-->
+
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#contact">Contact us</a>
+  <a href="#contact">Register</a>
+  <a href="#contact">Gallery</a>
+  
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="column4" style="background-color:transparent;">
+
+<div class="side_buttons">
+  
+ <div class="sidebtn"><a href="#"><button class="button button4">Book Report</button></a></div>
+  <div class="sidebtn"><a href="#"><button class="button button4">Add student</button></a></div>
+<div class="sidebtn"><a href="#"><button class="button button4">Book request</button></a></div>
+<div class="sidebtn"><a href="#"><button class="button button4">Student Report</button></a></div>
+<div class="sidebtn"><a href="#"><button class="button button4">Add Book</button></a></div>
+<div class="sidebtn"><a href="#"><button class="button button4">Admin</button></a></div>
+<div class="sidebtn"><a href="#"><button class="button button4">Issue Book</button></a></div>
+<div class="sidebtn"><a href="#"><button class="button button4">Issue Report</button></a></div>
+
+</div>
+    
+  </div>
+  <div class="column3" style="background-color:transparent;">
+    <div class="container">
+  <form action="./processes.php" method="POST">
+    <center>
+     <H3 id="hr3"> ADD NEW BOOK</H3></center>
+    <div class="row">
+      <div class="col-25">
+        <label for="b_name">Book Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text"  name="b_name" placeholder="Book name..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="Price">Price</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="b_price" placeholder="Price..">
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="col-25">
+        <label for="Author">Author</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="b_author" placeholder="Author name..">
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="col-25">
+        <label for="Book photo">Bookphoto</label>
+      </div>
+      <div class="col-75">
+        
+         <input type="file" id="myFile" name="filename">
+         
+       
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="Branch">Branch</label>
+      </div>
+      <div class="col-75">
+        
+           <input type="radio" name="branch" value="agel">
+           <label for="AGEL">AGEL</label>
+
+          <input type="radio" name="branch" value="sql">
+          <label for="SQL">SQL</label><br>  
+
+         <input type="radio"name="branch" value="epml">
+         <label for="EPML">EPML</label>
+
+         <input type="radio" name="branch" value="other">
+          <label for="other">other</label><br> <br>
+        
+        
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="Quantity">Quantity</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="b_qty" placeholder="Quantity..">
+      </div>
+    </div>
+   
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+  </div>
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+
+
+<footer>
+  
+
+
+  
+</footer>
+
+</body>
+</html>
